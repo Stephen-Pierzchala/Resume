@@ -1,0 +1,97 @@
+
+body {
+  font-family: Helvetica, sans-serif, serif;
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h2{
+  font-weight:bold;
+  font-style: italic;
+
+}
+
+h3{
+  font-size: 1.5rem;
+  /* font-style: italic; */
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li{
+  padding-left: 2rem;
+  font-size: 1.05rem;
+}
+
+hr{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-right {
+  text-align: right;
+}
+
+
+
+/* Containers */
+
+.container {
+  margin-top: 20px;
+}
+
+/* Each item/skill/event listed on the resume */
+.entry{
+margin-bottom: 3px;
+}
+
+
+/* Time span of each individual event */
+.duration{
+  color: #777;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icons{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0 2rem;
+}
+
+
+a:hover{
+  text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .header-left, .header-right{
+    width: 100%;
+    text-align: center;
+  }
+
+  .duration{
+    text-align: center;
+  }
+
+  .entry{
+    margin-top: 1rem;
+  }
+}
