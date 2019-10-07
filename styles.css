@@ -1,18 +1,26 @@
-
-body {
-  font-family: Helvetica, sans-serif, serif;
+html{
+  background-color: #eee;
 }
 
+body {
+  background-color: white;
+  border: 15px solid #123456;
+  border-left: none;
+  border-right: none;
+  font-family: Helvetica, sans-serif, serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
 
 h1 {
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 
 h2{
   font-weight:bold;
   font-style: italic;
-
 }
 
 h3{
@@ -26,8 +34,9 @@ p{
 }
 
 li{
-  padding-left: 2rem;
   font-size: 1.05rem;
+  list-style-position: inside;
+  padding-left: 2rem;
 }
 
 hr{
@@ -46,7 +55,6 @@ hr{
 
 
 /* Containers */
-
 .container {
   margin-top: 20px;
 }
@@ -56,30 +64,36 @@ hr{
 margin-bottom: 3px;
 }
 
-
 /* Time span of each individual event */
 .duration{
   color: #777;
-  text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: right;
 }
 
+/* Icon Stuff */
 .icons{
-  text-align: center;
+  color: #123456;
   display: flex;
   justify-content: space-around;
-  margin: 2rem 0 2rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
+i, a{
+  color: #123456;
+}
 
-a:hover{
+a:hover, i:hover{
+  color: #2468AC;
   text-decoration: none;
 }
 
 
 
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
 
   .header-left, .header-right{
@@ -94,4 +108,15 @@ a:hover{
   .entry{
     margin-top: 1rem;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  body{
+    text-align: center;
+  }
+
+  li{
+    padding-left: none;
+  }
+
 }
